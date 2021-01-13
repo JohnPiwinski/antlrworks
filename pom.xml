@@ -27,7 +27,7 @@ ANTLRWorks project definition for building via Maven.
     <groupId>org.antlr</groupId>
     <artifactId>antlrworks</artifactId>
     <packaging>jar</packaging>
-    <version>1.5.3-SNAPSHOT</version>
+    <version>1.6.3-SNAPSHOT</version>
 
         <!--
             Name of the porject as seen by IDEs and so on.
@@ -55,8 +55,8 @@ ANTLRWorks project definition for building via Maven.
             <!-- This property is used for dependencies and for the MANIFEST.MF customization -->
         <antlr3.version>3.5.1</antlr3.version>
         <aw1.basedir>${basedir}</aw1.basedir>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
 
     <!--
@@ -138,8 +138,8 @@ ANTLRWorks project definition for building via Maven.
                             <execution>
                                 <id>default-compile</id>
                                 <configuration>
-                                    <source>1.5</source>
-                                    <target>1.5</target>
+                                    <source>1.6</source>
+                                    <target>1.6</target>
                                     <compilerArgs>
                                         <arg>-Xlint</arg>
                                         <arg>-Xlint:-serial</arg>
@@ -211,7 +211,7 @@ ANTLRWorks project definition for building via Maven.
                             <javaApplicationStub>${basedir}/osx/ANTLRWorks.app/Contents/MacOS/JavaApplicationStub</javaApplicationStub>
                             <dictionaryFile>osx/Info.plist</dictionaryFile>
                             <iconFile>${basedir}/osx/ANTLRWorks.app/Contents/Resources/app.icns</iconFile>
-                            <jvmVersion>1.5+</jvmVersion>
+                            <jvmVersion>1.6+</jvmVersion>
                             <additionalResources>
                                 <fileSet>
                                     <directory>${basedir}/osx</directory>
@@ -323,8 +323,8 @@ ANTLRWorks project definition for building via Maven.
                     <execution>
                         <id>default-compile</id>
                         <configuration>
-                            <source>1.5</source>
-                            <target>1.5</target>
+                            <source>1.6</source>
+                            <target>1.6</target>
                         </configuration>
                     </execution>
                     <execution>
